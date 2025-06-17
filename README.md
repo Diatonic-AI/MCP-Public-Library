@@ -1,8 +1,9 @@
-# SmartGrowth MCP Servers
+# MCP Public Library
 
-[![Node.js CI](https://github.com/iamdrewfortini/smartgrowth-mcp-servers/actions/workflows/node-ci.yml/badge.svg)](https://github.com/iamdrewfortini/smartgrowth-mcp-servers/actions/workflows/node-ci.yml)
-[![npm version](https://badge.fury.io/js/smartgrowth-mcp-servers.svg)](https://badge.fury.io/js/smartgrowth-mcp-servers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Diatonic-AI/MCP-Public-Library/node-ci.yml?branch=main&label=build)](https://github.com/Diatonic-AI/MCP-Public-Library/actions/workflows/node-ci.yml)
+[![License: MIT](https://img.shields.io/github/license/Diatonic-AI/MCP-Public-Library?color=yellow)](https://github.com/Diatonic-AI/MCP-Public-Library/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/Diatonic-AI/MCP-Public-Library)](https://github.com/Diatonic-AI/MCP-Public-Library/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Diatonic-AI/MCP-Public-Library)](https://github.com/Diatonic-AI/MCP-Public-Library/pulls)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
