@@ -1,0 +1,4 @@
+storage:
+  # Where to store data
+  storage_path: /qdrant/storage
+

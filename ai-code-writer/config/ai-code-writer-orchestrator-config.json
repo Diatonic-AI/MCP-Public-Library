@@ -1,0 +1,346 @@
+{
+  "version": "2.0.0",
+  "description": "Comprehensive MCP server configuration with all discovered tools and servers",
+  "lastUpdated": "2025-06-17T12:25:00Z",
+  "mcpServers": {
+    "ai-code-writer-orchestrator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\ai-code-writer\\ai-code-writer-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers\\ai-code-writer",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth",
+        "MCP_SERVERS_PATH": "G:\\SmartGrowth\\mcp-servers",
+        "NODE_ENV": "production",
+        "LOG_LEVEL": "info",
+        "DOTENV_CONFIG_PATH": "G:\\SmartGrowth\\mcp-servers\\.env"
+      },
+      "disabled": false,
+      "description": "Main orchestration server with AI-powered problem solving and code generation",
+      "category": "orchestration",
+      "alwaysAllow": [
+        "load_environment",
+        "analyze_problem",
+        "generate_solution_plan",
+        "execute_solution_plan",
+        "advanced_file_operations",
+        "directory_structure_manager",
+        "discover_mcp_tools",
+        "chain_mcp_tools",
+        "communicate_with_mcp_server",
+        "parallel_task_executor",
+        "ai_conversation_manager",
+        "system_diagnostics",
+        "analyze_existing_servers",
+        "generate_code_context",
+        "generate_server_code",
+        "create_server_files",
+        "validate_generated_server",
+        "generate_completion_summary",
+        "create_conversation",
+        "add_message",
+        "generate_ai_response",
+        "get_conversation",
+        "get_conversation_timeline",
+        "search_conversations",
+        "get_conversation_stats",
+        "cleanup_old_conversations",
+        "initialize_vector_database",
+        "store_vector",
+        "similarity_search",
+        "contextual_search",
+        "get_database_stats",
+        "backup_database",
+        "generate_text_embedding",
+        "generate_batch_embeddings",
+        "embed_and_store",
+        "semantic_search",
+        "contextual_reasoning_search",
+        "test_lm_studio_connection",
+        "get_embedding_stats"
+      ]
+    },
+    "note-creator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\note-creator-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Advanced note creation with templates and structured content",
+      "category": "content",
+      "alwaysAllow": [
+        "create_note",
+        "create_daily_note",
+        "create_meeting_note",
+        "create_project_note",
+        "create_research_note",
+        "create_template_note",
+        "create_summary_note"
+      ]
+    },
+    "text-processor": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Text processing and formatting utilities",
+      "category": "utility",
+      "alwaysAllow": [
+        "format_markdown",
+        "create_bullet_list",
+        "extract_keywords",
+        "word_count"
+      ]
+    },
+    "file-manager": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "File navigation and management operations",
+      "category": "file",
+      "alwaysAllow": [
+        "list_files",
+        "read_file_content",
+        "search_files",
+        "create_folder"
+      ]
+    },
+    "tag-helper": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Tag management and organization tools",
+      "category": "utility",
+      "alwaysAllow": [
+        "add_tags",
+        "find_files_by_tag",
+        "list_all_tags",
+        "suggest_tags",
+        "create_tag_index"
+      ]
+    },
+    "link-builder": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Link creation and backlink analysis",
+      "category": "navigation",
+      "alwaysAllow": [
+        "create_wikilink",
+        "find_backlinks",
+        "create_table_of_contents",
+        "create_note_graph",
+        "suggest_links"
+      ]
+    },
+    "vault-navigator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\vault-navigator-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Advanced vault navigation and analysis",
+      "category": "navigation",
+      "alwaysAllow": [
+        "get_vault_structure",
+        "suggest_file_paths",
+        "create_directory_structure",
+        "index_vault_content",
+        "find_orphaned_files",
+        "analyze_vault_metrics",
+        "smart_path_resolver",
+        "create_vault_backup_index",
+        "search_by_file_properties",
+        "generate_sitemap"
+      ]
+    },
+    "ai-integrations": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\ai-integrations\\ai-integration-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers\\ai-integrations",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "AI-powered text enhancement and content analysis",
+      "category": "ai",
+      "alwaysAllow": [
+        "enhance_text_with_ai",
+        "generate_smart_summary",
+        "smart_tag_generation",
+        "intelligent_content_analysis",
+        "smart_note_connection",
+        "ai_writing_assistant"
+      ]
+    },
+    "collaboration": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\collaboration\\collaboration-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers\\collaboration",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Team collaboration and project management tools",
+      "category": "collaboration",
+      "alwaysAllow": [
+        "create_team_workspace",
+        "assign_task",
+        "create_meeting_notes",
+        "track_team_progress",
+        "create_code_review_checklist",
+        "generate_team_dashboard",
+        "sync_external_tools"
+      ]
+    },
+    "data-visualization": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\data-visualization\\data-viz-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers\\data-visualization",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      },
+      "disabled": false,
+      "description": "Data visualization and chart creation tools",
+      "category": "visualization",
+      "alwaysAllow": [
+        "create_mermaid_chart",
+        "create_data_table",
+        "generate_analytics_dashboard",
+        "create_timeline_visualization",
+        "create_network_diagram",
+        "export_chart_data",
+        "create_comparison_charts"
+      ]
+    }
+  },
+  "toolCategories": {
+    "file": {
+      "description": "File operations, creation, and management",
+      "tools": 37,
+      "primary_servers": ["file-manager", "vault-navigator", "note-creator"]
+    },
+    "utility": {
+      "description": "General utility functions and helpers",
+      "tools": 31,
+      "primary_servers": ["text-processor", "tag-helper", "ai-code-writer-orchestrator"]
+    },
+    "generation": {
+      "description": "Content and code generation tools",
+      "tools": 8,
+      "primary_servers": ["ai-code-writer-orchestrator", "ai-integrations", "data-visualization"]
+    },
+    "analysis": {
+      "description": "Analysis and diagnostic tools",
+      "tools": 4,
+      "primary_servers": ["ai-code-writer-orchestrator", "vault-navigator"]
+    },
+    "orchestration": {
+      "description": "Task coordination and workflow management",
+      "tools": 2,
+      "primary_servers": ["ai-code-writer-orchestrator"]
+    },
+    "data": {
+      "description": "Data management and indexing",
+      "tools": 1,
+      "primary_servers": ["vault-navigator"]
+    }
+  },
+  "workflowChains": {
+    "content_creation": {
+      "description": "Complete content creation workflow",
+      "steps": [
+        "analyze_problem",
+        "generate_solution_plan",
+        "create_note",
+        "enhance_text_with_ai",
+        "add_tags",
+        "create_wikilink"
+      ]
+    },
+    "project_analysis": {
+      "description": "Comprehensive project analysis and documentation",
+      "steps": [
+        "get_vault_structure",
+        "analyze_vault_metrics",
+        "find_orphaned_files",
+        "create_project_note",
+        "generate_analytics_dashboard"
+      ]
+    },
+    "code_generation": {
+      "description": "AI-powered code generation workflow",
+      "steps": [
+        "analyze_problem",
+        "generate_code_context",
+        "generate_server_code",
+        "create_server_files",
+        "validate_generated_server",
+        "generate_completion_summary"
+      ]
+    },
+    "team_collaboration": {
+      "description": "Team workspace setup and management",
+      "steps": [
+        "create_team_workspace",
+        "create_meeting_notes",
+        "assign_task",
+        "track_team_progress",
+        "generate_team_dashboard"
+      ]
+    }
+  },
+  "performance": {
+    "monitoring": {
+      "enabled": true,
+      "metrics": ["usage_count", "success_rate", "average_duration", "user_ratings"]
+    },
+    "optimization": {
+      "tool_recommendation": true,
+      "workflow_analysis": true,
+      "performance_tracking": true
+    }
+  },
+  "security": {
+    "timeout_settings": {
+      "default_timeout": 30000,
+      "long_running_timeout": 120000,
+      "ai_operations_timeout": 180000
+    },
+    "safety_settings": {
+      "max_file_size": "100MB",
+      "allowed_file_extensions": [".md", ".txt", ".json", ".js", ".ts", ".py", ".yaml", ".yml"],
+      "restricted_paths": [],
+      "enable_sandbox": false
+    }
+  }
+}
+

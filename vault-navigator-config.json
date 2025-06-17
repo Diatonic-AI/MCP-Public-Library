@@ -1,0 +1,13 @@
+{
+  "command": "node",
+  "args": ["G:\\SmartGrowth\\mcp-servers\\vault-navigator-server.js"],
+  "env": {
+    "NODE_ENV": "production",
+    "MCP_SERVER_NAME": "vault-navigator",
+    "VAULT_PATH": "G:\\SmartGrowth",
+    "MAX_SEARCH_DEPTH": "10",
+    "ENABLE_FUZZY_SEARCH": "true",
+    "DEFAULT_SORT_ORDER": "name"
+  }
+}
+

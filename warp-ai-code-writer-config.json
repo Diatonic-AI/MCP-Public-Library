@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "ai-code-writer": {
+      "command": "node",
+      "args": ["ai-code-writer-server.js"],
+      "cwd": "G:/SmartGrowth/mcp-servers",
+      "env": {
+        "GEMINI_API_KEY": "AIzaSyC6AUsslKXsaU7PO6-wy131g9-aVSI1gn8",
+        "OBSIDIAN_VAULT_PATH": "G:/SmartGrowth",
+        "MCP_SERVERS_PATH": "G:/SmartGrowth/mcp-servers",
+        "NODE_ENV": "development"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "analyze_existing_servers",
+        "generate_code_context",
+        "generate_server_code",
+        "create_server_files",
+        "validate_generated_server",
+        "generate_completion_summary"
+      ]
+    }
+  }
+}
+

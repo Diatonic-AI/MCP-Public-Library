@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "data-visualization": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\data-visualization\\data-viz-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    }
+  }
+}
+

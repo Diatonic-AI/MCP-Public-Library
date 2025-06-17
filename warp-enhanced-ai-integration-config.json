@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "ai-integration": {
+      "command": "node",
+      "args": ["ai-integrations/ai-integration-server.js"],
+      "cwd": "G:/SmartGrowth/mcp-servers",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "enhance_text_with_ai",
+        "generate_smart_summary",
+        "smart_tag_generation",
+        "intelligent_content_analysis",
+        "smart_note_connection",
+        "ai_writing_assistant"
+      ]
+    }
+  }
+}
+

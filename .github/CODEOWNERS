@@ -1,0 +1,31 @@
+# Global code owners
+* @iamdrewfortini
+
+# Configuration files
+*.json @iamdrewfortini
+*.yml @iamdrewfortini
+*.yaml @iamdrewfortini
+
+# MCP Server files
+*-server.js @iamdrewfortini
+server-launcher.js @iamdrewfortini
+
+# Documentation
+*.md @iamdrewfortini
+docs/ @iamdrewfortini
+
+# GitHub workflows and templates
+.github/ @iamdrewfortini
+
+# Package and dependency management
+package.json @iamdrewfortini
+package-lock.json @iamdrewfortini
+
+# Environment and configuration
+.env* @iamdrewfortini
+.gitignore @iamdrewfortini
+
+# Test files
+*test* @iamdrewfortini
+__tests__/ @iamdrewfortini
+

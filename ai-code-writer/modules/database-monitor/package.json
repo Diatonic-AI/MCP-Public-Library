@@ -1,0 +1,32 @@
+{
+  "name": "database-monitor",
+  "version": "1.0.0",
+  "description": "Comprehensive database monitoring and visualization module for MCP server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "example": "node example.js"
+  },
+  "keywords": [
+    "database",
+    "monitoring",
+    "mongodb",
+    "redis",
+    "neo4j",
+    "qdrant",
+    "visualization",
+    "mcp"
+  ],
+  "author": "AI Code Writer Team",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^6.17.0",
+    "redis": "^5.5.6",
+    "neo4j-driver": "^5.28.1",
+    "axios": "^1.10.0"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  }
+}
+

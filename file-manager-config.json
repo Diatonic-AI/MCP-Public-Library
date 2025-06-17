@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "file-manager": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"],
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      }
+    }
+  }
+}
+
+{
+  "cmd": "node",
+  "args": [
+    "G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MCP_SERVER_NAME": "file-manager",
+    "VAULT_PATH": "G:\\SmartGrowth",
+    "DEFAULT_FILE_EXTENSION": ".md",
+    "MAX_SEARCH_RESULTS": "50",
+    "SEARCH_TIMEOUT": "10000"
+  },
+  "cwd": "G:\\SmartGrowth"
+}
+

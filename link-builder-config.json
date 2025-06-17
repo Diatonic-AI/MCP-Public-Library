@@ -1,0 +1,18 @@
+{
+  "cmd": "node",
+  "args": [
+    "G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MCP_SERVER_NAME": "link-builder",
+    "VAULT_PATH": "G:\\SmartGrowth",
+    "LINK_FORMAT": "wikilink",
+    "MAX_LINK_SUGGESTIONS": "5",
+    "SIMILARITY_THRESHOLD": "0.1",
+    "NOTE_GRAPH_FILE": "Note-Graph.md",
+    "MIN_COMMON_WORDS": "2"
+  },
+  "cwd": "G:\\SmartGrowth"
+}
+

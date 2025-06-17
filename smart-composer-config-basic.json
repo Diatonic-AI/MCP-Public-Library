@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "note-creator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\note-creator-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "text-processor": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "file-manager": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "tag-helper": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "link-builder": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "text-processor": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"],
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth"
+      }
+    }
+  }
+}
+

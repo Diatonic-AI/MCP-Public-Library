@@ -1,0 +1,59 @@
+{
+  "mcpServers": {
+    "obsidian-note-creator": {
+      "command": "node",
+      "args": [
+        "G:\\SmartGrowth\\mcp-servers\\note-creator-server.js"
+      ],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "NODE_ENV": "production"
+      }
+    },
+    "obsidian-text-processor": {
+      "command": "node",
+      "args": [
+        "G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"
+      ],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "MAX_KEYWORDS": "10",
+        "MIN_WORD_LENGTH": "3"
+      }
+    },
+    "obsidian-file-manager": {
+      "command": "node",
+      "args": [
+        "G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"
+      ],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "DEFAULT_FILE_EXTENSION": ".md",
+        "MAX_SEARCH_RESULTS": "50"
+      }
+    },
+    "obsidian-tag-helper": {
+      "command": "node",
+      "args": [
+        "G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"
+      ],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "TAG_PREFIX": "#",
+        "MAX_SUGGESTED_TAGS": "5"
+      }
+    },
+    "obsidian-link-builder": {
+      "command": "node",
+      "args": [
+        "G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"
+      ],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "LINK_FORMAT": "wikilink",
+        "MAX_LINK_SUGGESTIONS": "5"
+      }
+    }
+  }
+}
+

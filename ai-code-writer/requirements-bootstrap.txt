@@ -1,0 +1,5 @@
+# Python requirements for MongoDB Bootstrap Script
+# Install with: pip install -r requirements-bootstrap.txt
+
+pymongo>=4.0.0
+

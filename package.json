@@ -1,0 +1,46 @@
+{
+  "name": "smartgrowth-mcp-servers",
+  "version": "2.0.0",
+  "description": "Enhanced MCP server infrastructure with AI integration for Obsidian Smart Composer plugin",
+  "main": "server-launcher.js",
+  "scripts": {
+    "start": "node server-launcher.js start",
+    "stop": "node server-launcher.js stop",
+    "status": "node server-launcher.js status",
+    "list": "node server-launcher.js list",
+    "test": "node test-servers.js",
+    "test-tools": "node test-tools.js",
+    "test-tools-interactive": "node test-tools.js -i",
+    "validate-config": "node -e \"console.log('Validating configs...'); JSON.parse(require('fs').readFileSync('./master-mcp-config.json', 'utf8')); console.log('✓ Valid');\"",
+    "start:note-creator": "node server-launcher.js start note-creator",
+    "start:text-processor": "node server-launcher.js start text-processor",
+    "start:file-manager": "node server-launcher.js start file-manager",
+    "start:tag-helper": "node server-launcher.js start tag-helper",
+    "start:link-builder": "node server-launcher.js start link-builder",
+    "start:vault-navigator": "node server-launcher.js start vault-navigator",
+    "start:ai-integration": "node ai-integrations/ai-integration-server.js",
+    "start:collaboration": "node collaboration/collaboration-server.js",
+    "start:data-viz": "node data-visualization/data-viz-server.js",
+    "install-deps": "npm install",
+    "logs": "echo 'Check individual server console outputs for logs'"
+  },
+  "keywords": [
+    "obsidian",
+    "mcp",
+    "model-context-protocol",
+    "markdown",
+    "notes",
+    "knowledge-management"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

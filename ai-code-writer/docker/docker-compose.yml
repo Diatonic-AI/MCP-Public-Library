@@ -1,0 +1,42 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.7.4
+    container_name: qdrant-db
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - .\volumes\qdrant_storage:/qdrant/storage
+      - .\qdrant_config.yaml:/qdrant/config/production.yaml
+
+  redis:
+    image: redis/redis-stack:latest
+    container_name: redis-stack
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    volumes:
+      - .\volumes\redis:/data
+
+  neo4j:
+    image: neo4j:4.4
+    container_name: neo4j-db
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - .\volumes\neo4j\data:/data
+      - .\volumes\neo4j\logs:/logs
+    environment:
+      NEO4J_AUTH: neo4j/password # IMPORTANT: Change this in production
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - .\volumes\mongo\data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password # IMPORTANT: Change this in production

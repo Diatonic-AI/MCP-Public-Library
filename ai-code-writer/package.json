@@ -1,0 +1,68 @@
+{
+  "name": "ai-code-writer-orchestrator",
+  "version": "2.0.0",
+  "description": "Self-sufficient MCP orchestration server with comprehensive AI-powered capabilities",
+  "main": "ai-code-writer-server.js",
+  "scripts": {
+    "start": "node ai-code-writer-server.js",
+    "dev": "NODE_ENV=development node ai-code-writer-server.js",
+    "test": "node test/test-runner.js",
+    "test:unit": "node test/test-runner.js --type=unit",
+    "test:integration": "node test/test-runner.js --type=integration",
+    "test:all": "node test/test-runner.js --type=all",
+    "test:coverage": "node test/test-runner.js --coverage",
+    "test:watch": "node test/test-runner.js --watch",
+    "test:ci": "CI=true node test/test-runner.js --coverage --bail",
+    "test:verbose": "node test/test-runner.js --verbose",
+    "test:jest": "jest",
+    "test:jest:watch": "jest --watch",
+    "test:logging": "jest test-comprehensive-logging.js --verbose",
+    "validate": "node utils/validate-modules.js",
+    "docs": "node utils/generate-docs.js",
+    "init-db": "node scripts/init-tool-registry-db.js",
+    "setup-mongodb": "node scripts/init-tool-registry-db.js",
+    "discover-tools": "node scripts/discover-and-populate-registry.js",
+    "populate-registry": "node scripts/discover-and-populate-registry.js",
+    "demo-usage": "node scripts/demo-usage-tracking.js",
+    "track-usage": "node scripts/demo-usage-tracking.js"
+  },
+  "keywords": [
+    "mcp",
+    "ai",
+    "orchestration",
+    "code-generation",
+    "problem-solving",
+    "file-operations",
+    "task-execution",
+    "gemini",
+    "obsidian"
+  ],
+  "author": "AI Code Writer Team",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.10.0",
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.17.0",
+    "neo4j-driver": "^5.28.1",
+    "node-fetch": "^3.3.2",
+    "redis": "^5.5.6",
+    "treeify": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "directories": {
+    "lib": "modules",
+    "doc": "docs",
+    "test": "test"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "mongodb-memory-server": "^10.1.4"
+  },
+  "overrides": {
+    "glob": "^10.3.10"
+  }
+}

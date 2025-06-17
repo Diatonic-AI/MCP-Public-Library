@@ -1,0 +1,85 @@
+{
+  "mcpServers": {
+    "note-creator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\note-creator-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "text-processor": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "file-manager": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "tag-helper": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "link-builder": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "vault-navigator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\vault-navigator-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "ai-integration": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\ai-integrations\\ai-integration-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "LM_STUDIO_BASE_URL": "http://172.16.0.50:1240",
+        "LM_STUDIO_MODEL": "qwen2.5-14b-instruct",
+        "OPENAI_API_KEY": "",
+        "OPENAI_MODEL": "gpt-3.5-turbo",
+        "GEMINI_API_KEY": ""
+      }
+    },
+    "collaboration": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\collaboration\\collaboration-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "data-visualization": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\data-visualization\\data-viz-server.js"],
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth"
+      }
+    },
+    "ai-code-writer": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\ai-code-writer-server.js"],
+      "cwd": "G:\\SmartGrowth\\mcp-servers",
+      "env": {
+        "VAULT_PATH": "G:\\SmartGrowth",
+        "OBSIDIAN_VAULT_PATH": "G:\\SmartGrowth",
+        "MCP_SERVERS_PATH": "G:\\SmartGrowth\\mcp-servers",
+        "NODE_ENV": "production",
+        "DOTENV_CONFIG_PATH": "G:\\SmartGrowth\\mcp-servers\\.env"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,68 @@
+{
+  "note-creator": {
+    "command": "node",
+    "args": ["G:\\SmartGrowth\\mcp-servers\\note-creator-server.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "MCP_SERVER_NAME": "note-creator",
+      "VAULT_PATH": "G:\\SmartGrowth"
+    }
+  },
+  "text-processor": {
+    "command": "node",
+    "args": ["G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "MCP_SERVER_NAME": "text-processor",
+      "VAULT_PATH": "G:\\SmartGrowth",
+      "MAX_KEYWORDS": "10",
+      "MIN_WORD_LENGTH": "3"
+    }
+  },
+  "file-manager": {
+    "command": "node",
+    "args": ["G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "MCP_SERVER_NAME": "file-manager",
+      "VAULT_PATH": "G:\\SmartGrowth",
+      "DEFAULT_FILE_EXTENSION": ".md",
+      "MAX_SEARCH_RESULTS": "50"
+    }
+  },
+  "tag-helper": {
+    "command": "node",
+    "args": ["G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "MCP_SERVER_NAME": "tag-helper",
+      "VAULT_PATH": "G:\\SmartGrowth",
+      "TAG_PREFIX": "#",
+      "MAX_SUGGESTED_TAGS": "5"
+    }
+  },
+  "link-builder": {
+    "command": "node",
+    "args": ["G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "MCP_SERVER_NAME": "link-builder",
+      "VAULT_PATH": "G:\\SmartGrowth",
+      "LINK_FORMAT": "wikilink",
+      "MAX_LINK_SUGGESTIONS": "5"
+    }
+  },
+  "vault-navigator": {
+    "command": "node",
+    "args": ["G:\\SmartGrowth\\mcp-servers\\vault-navigator-server.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "MCP_SERVER_NAME": "vault-navigator",
+      "VAULT_PATH": "G:\\SmartGrowth",
+      "MAX_SEARCH_DEPTH": "10",
+      "ENABLE_FUZZY_SEARCH": "true",
+      "DEFAULT_SORT_ORDER": "name"
+    }
+  }
+}
+

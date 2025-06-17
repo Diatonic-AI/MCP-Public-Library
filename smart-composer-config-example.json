@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "note-creator": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\note-creator-server.js"],
+      "cwd": "G:\\SmartGrowth"
+    },
+    "text-processor": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\text-processor-server.js"],
+      "cwd": "G:\\SmartGrowth"
+    },
+    "file-manager": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\file-manager-server.js"],
+      "cwd": "G:\\SmartGrowth"
+    },
+    "tag-helper": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"],
+      "cwd": "G:\\SmartGrowth"
+    },
+    "link-builder": {
+      "command": "node",
+      "args": ["G:\\SmartGrowth\\mcp-servers\\link-builder-server.js"],
+      "cwd": "G:\\SmartGrowth"
+    }
+  }
+}
+

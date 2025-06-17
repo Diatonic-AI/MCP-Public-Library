@@ -1,0 +1,4 @@
+Tool Name,Params Used,Result,Error
+example_tool,"param1=value1; param2=value2",Success,N/A
+broken_tool,param1=test,Fail,Connection timeout after 30s
+,,,

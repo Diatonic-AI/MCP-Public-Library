@@ -1,0 +1,17 @@
+{
+  "cmd": "node",
+  "args": [
+    "G:\\SmartGrowth\\mcp-servers\\tag-helper-server.js"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MCP_SERVER_NAME": "tag-helper",
+    "VAULT_PATH": "G:\\SmartGrowth",
+    "TAG_PREFIX": "#",
+    "MAX_SUGGESTED_TAGS": "5",
+    "MIN_TAG_FREQUENCY": "2",
+    "TAG_INDEX_FILE": "Tag-Index.md"
+  },
+  "cwd": "G:\\SmartGrowth"
+}
+

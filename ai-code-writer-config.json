@@ -1,0 +1,94 @@
+{
+  "name": "ai-code-writer-server",
+  "version": "1.0.0",
+  "description": "AI-powered MCP server code generation using Gemini AI",
+  "capabilities": {
+    "tools": {
+      "analyze_existing_servers": {
+        "description": "Analyze existing MCP servers for reference patterns",
+        "category": "analysis",
+        "required_params": ["reference_directories"]
+      },
+      "generate_code_context": {
+        "description": "Generate comprehensive context for AI code generation",
+        "category": "preparation",
+        "required_params": ["technical_spec", "target_directory"]
+      },
+      "generate_server_code": {
+        "description": "Generate complete MCP server code using Gemini AI",
+        "category": "generation",
+        "required_params": ["context", "code_type"],
+        "ai_provider": "gemini"
+      },
+      "create_server_files": {
+        "description": "Create all necessary files for the MCP server",
+        "category": "creation",
+        "required_params": ["target_directory", "generated_code", "server_name"]
+      },
+      "validate_generated_server": {
+        "description": "Validate the generated server structure and syntax",
+        "category": "validation",
+        "required_params": ["server_directory"]
+      },
+      "generate_completion_summary": {
+        "description": "Generate summary of what was completed",
+        "category": "reporting",
+        "required_params": ["project_details", "files_created"]
+      }
+    }
+  },
+  "environment_variables": {
+    "GEMINI_API_KEY": {
+      "description": "Gemini AI API key for code generation",
+      "required": true,
+      "type": "string"
+    },
+    "OBSIDIAN_VAULT_PATH": {
+      "description": "Path to Obsidian vault for context",
+      "required": false,
+      "type": "string"
+    },
+    "MCP_SERVERS_PATH": {
+      "description": "Path to MCP servers directory",
+      "required": false,
+      "type": "string",
+      "default": "./"
+    }
+  },
+  "ai_configuration": {
+    "model": "gemini-1.5-pro",
+    "temperature": 0.7,
+    "max_tokens": 8192,
+    "generation_settings": {
+      "code_style": "modern_javascript",
+      "include_comments": true,
+      "error_handling": "comprehensive",
+      "validation": "strict"
+    }
+  },
+  "server_generation": {
+    "supported_types": ["main_server", "config_file", "package_json", "readme"],
+    "validation_levels": ["basic", "comprehensive"],
+    "file_templates": {
+      "main_server": "${server_name}-server.js",
+      "config_file": "${server_name}-config.json",
+      "package_json": "package.json",
+      "readme": "README.md"
+    }
+  },
+  "analysis_patterns": {
+    "extract_imports": true,
+    "extract_tools": true,
+    "extract_env_vars": true,
+    "extract_error_handling": true,
+    "extract_structure": true,
+    "extract_dependencies": true
+  },
+  "defaults": {
+    "analysis_focus": "all",
+    "validation_level": "basic",
+    "code_style": "mcp_standard",
+    "include_examples": true
+  }
+}
+
